@@ -2,6 +2,7 @@
     background: url(../public/images/background.jpg) center center;
     height: 50vh;
     position: relative;
+    
 }
 .banner__info {
     background-color: black;
@@ -33,10 +34,12 @@
     margin-top: 20px;
     font-weight: 600;
 }
-.banner__info > h5 {
-    margin-top: 10px;
-}
+
 .banner__info > button:hover {
     background-color: white;
     color: #ff7779;
+}
+
+.banner__info > h5 {
+    margin-top: 10px;
 }

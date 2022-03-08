@@ -5,7 +5,7 @@ import "react-date-range/dist/theme/default.css";//theme css file
 import { DateRangePicker } from 'react-date-range';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import { Button } from '@material-ui/core';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 //DATE PICKER COMPONENT
@@ -28,13 +28,10 @@ function Search() {
 
     return ( 
         <div className='search'>
-            <DateRangePicker 
-            ranges={[selectionRange]}
-            onChange={handleSelect} 
+            <DateRangePicker ranges={[selectionRange]}  onChange={handleSelect} 
             />
             <h2>
-                Number of guests
-                <PeopleAltIcon />
+                Number of guests<PeopleAltIcon />
             </h2>
             <input min={0} defaultValue={2} type="number" />
             <Button onClick={()=>navigate('/search')} >Search Airbnb </Button>
